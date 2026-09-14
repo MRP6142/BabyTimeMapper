@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--This is an example xml filled with random events, feel free to copy and paste your own events over these ones from the template!-->
+<?xml-model href="events.rnc" type="application/relax-ng-compact-syntax"?>
+<root>
 <events>
  <track type="1" name="early">
   <event>
@@ -42,11 +43,11 @@
     <date type="start">
       <year>1941</year>
       <month>06</month>
-      <day>22</day>
       <era>20th century</era>
     </date>
     
     <date type="end">
+      <year> 1942</year>
       <era>20th century</era>
     </date>
     <description>Germany launched a massive invasion on the Soviet Union, which created an eastern front.</description>
@@ -59,10 +60,10 @@
     <date type="start">
       <year>1941</year>
       <month>12</month>
-      <day>7</day>
       <era>20th century</era>
     </date>
     <date type="end">
+      <year>1942</year>
       <era>20th century</era>
     </date>
     <description>Japan attacks a naval base at Pearl Harbor, Hawaii. This attack lead the United States to enter the war.</description>
@@ -75,10 +76,10 @@
     <date type="start">
       <year>1945</year>
       <month>05</month>
-      <day>8</day>
       <era>20th century</era>
     </date>
     <date type="end">
+      <year>1945</year>
       <era>20th century</era>
     </date>
     <description>Germany surrendered to the allies, officially ending the war in Europe.</description>
@@ -87,3 +88,4 @@
   </event>
  </track>
 </events>
+</root>

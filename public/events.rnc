@@ -1,5 +1,22 @@
 start = root 
-root = element xml {events+}
-events = element events {track+}
-track = element track {"type"|"name"} 
-type = attribute type {xsd:integer} 
+root = element root {events} 
+events = element events {track+} 
+track = element track {type, name, event+} 
+type = attribute type {xsd:integer | "1" | "2" | "start" | "end"} 
+name = attribute name {"early" | "mid"} 
+event = element event {title, date+, description, lat, lon}
+title = element title {text} 
+date = element date {year, month*, era*, type} 
+year = element year {text} 
+month = element month {text}
+era = element era {text} 
+description = element description {text} 
+lat = element lat {text} 
+lon = element lon {text}
+
+
+
+
+
+
+
