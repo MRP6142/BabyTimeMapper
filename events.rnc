@@ -1,0 +1,5 @@
+start = root 
+root = element xml {events+}
+events = element events {track+}
+track = element track {"type"|"name"} 
+type = attribute type {xsd:integer} 
